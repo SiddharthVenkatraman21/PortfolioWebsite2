@@ -1,0 +1,536 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfolio Landing Page</title>
+  <link rel="stylesheet" href="styles.css">
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.0.2/dist/tailwind.min.css" rel="stylesheet">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+
+</head>
+<body id = "body">
+  <canvas id="backgroundCanvas"></canvas>
+  <section id="landing" class="relative h-screen flex flex-col justify-center items-center text-center">
+    <div class="centered-text">
+      <h1 class="text-5xl font-bold">Sid Venkatraman</h1>
+      <p class="text-xl mt-2">Software Engineer | Full-Stack Developer</p>
+    </div>
+    
+    <!-- Arrow icon linking to the next section -->
+    <div class="absolute bottom-5 text-4xl">
+      <a href="#about" class="text-gray-300 smooth-scroll-middle hover:text-white transition-colors duration-300">
+        &#x2193; <!-- Down arrow icon -->
+      </a>
+    </div>
+  </section>
+
+  <section id="about" class="bg-gray-800 text-white py-16 px-4 min-h-screen">
+    <h2 class="text-6xl font-bold text-center text-gray-100 mb-16">About Me</h2>
+    
+    <div class="flex flex-col 1370:flex-row items-center justify-center 1370:space-x-8">
+      <!-- Left Side: Image and Text -->
+      <div class="flex flex-col items-center text-center space-y-6 mx-auto w-full max-w-md px-6 1370:w-1/2 mb-16">
+          <!-- Image -->
+          <img src="/images/GradPicSuitGate.jpg" alt="Sid Venkatraman" class="w-60 h-60 rounded-full border-4 border-gray-200 shadow-lg mb-4 object-cover">
+          <!-- Text Content -->
+          <p class="text-lg">
+              My name is Sid, I'm a dedicated software engineer with a strong interest in continuous learning. I'm currently developing automation testing framework for the trading systems at Charles Schwab.
+          </p>
+          
+          <!-- Buttons -->
+          <div class="flex gap-6 mt-8">
+            <a href="/SidVenkatramanResume.pdf" target="_blank" rel="noopener noreferrer" 
+               class="flex items-center justify-center bg-blue-100 text-gray-900 py-3 px-6 rounded-xl font-semibold shadow-lg transition-all duration-300 transform hover:scale-105 hover:shadow-xl hover:bg-blue-200">
+              <i class="fas fa-file-alt mr-3 text-lg"></i> Resume
+            </a>
+            
+            <!-- <a href="mailto:sid.venkatraman17@gmail.com" target="_blank" rel="noopener noreferrer" 
+               class="flex items-center justify-center bg-blue-100 text-gray-900 py-3 px-6 rounded-xl font-semibold shadow-lg transition-all duration-300 transform hover:scale-105 hover:shadow-xl hover:bg-blue-200">
+              <i class="fas fa-envelope mr-3 text-lg"></i> Email
+            </a> -->
+            
+            <a href="https://github.com/SiddharthVenkatraman21" target="_blank" rel="noopener noreferrer" 
+               class="flex items-center justify-center bg-blue-100 text-gray-900 py-3 px-6 rounded-xl font-semibold shadow-lg transition-all duration-300 transform hover:scale-105 hover:shadow-xl hover:bg-blue-200">
+              <i class="fab fa-github mr-3 text-lg"></i> GitHub
+            </a>
+          </div>
+          
+          
+          
+          
+      </div>
+  
+      <!-- Right Side: Technologies -->
+      <div class="grid grid-cols-3 gap-6 mt-24 px-6 sm:px-16 md:px-40 1370:mt-24">
+        <!-- Left Column (3 items) -->
+        <div class="space-y-4">
+          <div class="flex flex-col items-center p-2 bg-gray-900 rounded-full border-4 transition-all duration-300 shadow-lg transform hover:scale-110 w-24 sm:w-32 md:w-40 xl:w-48 2xl:w-56" style="border-color: #00d8ff;">
+            <i class="fab fa-react text-xs sm:text-3xl md:text-4xl xl:text-5xl 2xl:text-6xl mb-2" style="color: #00d8ff;"></i>
+            <span class="text-sm sm:text-lg font-semibold text-white">React</span>
+          </div>
+          <div class="flex flex-col items-center p-2 bg-gray-900 rounded-full border-4 transition-all duration-300 shadow-lg transform hover:scale-110 w-24 sm:w-32 md:w-40 xl:w-48 2xl:w-56" style="border-color: #f7df1e;">
+            <i class="fab fa-js-square text-xs sm:text-3xl md:text-4xl xl:text-5xl 2xl:text-6xl mb-2" style="color: #f7df1e;"></i>
+            <span class="text-sm sm:text-lg font-semibold text-white">JavaScript</span>
+          </div>
+          <div class="flex flex-col items-center p-2 bg-gray-900 rounded-full border-4 transition-all duration-300 shadow-lg transform hover:scale-110 w-24 sm:w-32 md:w-40 xl:w-48 2xl:w-56" style="border-color: #306998;">
+            <i class="fab fa-python text-xs sm:text-3xl md:text-4xl xl:text-5xl 2xl:text-6xl mb-2" style="color: #306998;"></i>
+            <span class="text-sm sm:text-lg font-semibold text-white">Python</span>
+          </div>
+        </div>
+      
+        <!-- Middle Column (4 items) -->
+        <div class="space-y-4 transform -translate-y-16">
+          <div class="flex flex-col items-center p-2 bg-gray-900 rounded-full border-4 transition-all duration-300 shadow-lg transform hover:scale-110 w-24 sm:w-32 md:w-40 xl:w-48 2xl:w-56" style="border-color: #ff9900;">
+            <i class="fa-brands fa-aws text-xs sm:text-3xl md:text-4xl xl:text-5xl 2xl:text-6xl mb-2" style="color: #ff9900;"></i>
+            <span class="text-sm sm:text-lg font-semibold text-white">AWS</span>
+          </div>
+          <div class="flex flex-col items-center p-2 bg-gray-900 rounded-full border-4 transition-all duration-300 shadow-lg transform hover:scale-110 w-24 sm:w-32 md:w-40 xl:w-48 2xl:w-56" style="border-color: #68a063;">
+            <i class="fab fa-node text-xs sm:text-3xl md:text-4xl xl:text-5xl 2xl:text-6xl mb-2" style="color: #68a063;"></i>
+            <span class="text-sm sm:text-lg font-semibold text-white">NodeJS</span>
+          </div>
+          <div class="flex flex-col items-center p-2 bg-gray-900 rounded-full border-4 transition-all duration-300 shadow-lg transform hover:scale-110 w-24 sm:w-32 md:w-40 xl:w-48 2xl:w-56" style="border-color: #00599c;">
+            <i class="fa-solid fa-code text-xs sm:text-3xl md:text-4xl xl:text-5xl 2xl:text-6xl mb-2" style="color: #00599c;"></i>
+            <span class="text-sm sm:text-lg font-semibold text-white">C++</span>
+          </div>
+          <div class="flex flex-col items-center p-2 bg-gray-900 rounded-full border-4 transition-all duration-300 shadow-lg transform hover:scale-110 w-24 sm:w-32 md:w-40 xl:w-48 2xl:w-56" style="border-color: #512BD4;">
+            <i class="fab fa-microsoft text-xs sm:text-3xl md:text-4xl xl:text-5xl 2xl:text-6xl mb-2" style="color: #512BD4;"></i>
+            <span class="text-sm sm:text-lg font-semibold text-white">.NET (C#)</span>
+          </div>
+        </div>
+      
+        <!-- Right Column (3 items) -->
+        <div class="space-y-4">
+          <div class="flex flex-col items-center p-2 bg-gray-900 rounded-full border-4 transition-all duration-300 shadow-lg transform hover:scale-110 w-24 sm:w-32 md:w-40 xl:w-48 2xl:w-56" style="border-color: #00758F;">
+            <i class="fas fa-database text-xs sm:text-3xl md:text-4xl xl:text-5xl 2xl:text-6xl mb-2" style="color: #00758F;"></i>
+            <span class="text-sm sm:text-lg font-semibold text-white">SQL</span>
+          </div>
+          <div class="flex flex-col items-center p-2 bg-gray-900 rounded-full border-4 transition-all duration-300 shadow-lg transform hover:scale-110 w-24 sm:w-32 md:w-40 xl:w-48 2xl:w-56" style="border-color: #E97624;">
+            <i class="fas fa-chart-line text-xs sm:text-3xl md:text-4xl xl:text-5xl 2xl:text-6xl mb-2" style="color: #E97624;"></i>
+            <span class="text-sm sm:text-lg font-semibold text-white">Tableau</span>
+          </div>
+          <div class="flex flex-col items-center p-2 bg-gray-900 rounded-full border-4 transition-all duration-300 shadow-lg transform hover:scale-110 w-24 sm:w-32 md:w-40 xl:w-48 2xl:w-56" style="border-color: #4285F4;">
+            <i class="fab fa-google text-xs sm:text-3xl md:text-4xl xl:text-5xl 2xl:text-6xl mb-2" style="color: #4285F4;"></i>
+            <span class="text-sm sm:text-lg font-semibold text-white">GCP</span>
+          </div>
+        </div>
+      </div>
+      
+      
+    </div>
+</section>
+
+
+ 
+
+<section id="experience" class="bg-gray-900 text-white py-16">
+  <h2 class="text-6xl font-bold text-center text-gray-100 mb-16">Industry Experience</h2>
+  
+  <!-- Experience Section -->
+  <div class="grid grid-cols-1 md:grid-cols-2 gap-8 px-4">
+    
+    <!-- Work Experience 1 -->
+    <div class="flex items-center space-x-5 bg-gray-800 p-6 rounded-lg shadow-md transform transition duration-300 hover:shadow-xl hover:scale-105">
+      <div class="flex-shrink-0 flex items-center justify-center bg-gray-700 rounded-full overflow-hidden h-24 w-24">
+        <img src="images/schwabLogo.svg" alt="Charles Schwab Logo" class="h-full w-full object-contain">
+      </div>
+      <div>
+        <h3 class="text-xl font-semibold text-white">Charles Schwab</h3>
+        <p class="text-sm text-teal-400">Software Engineer</p>
+        <p class="text-xs text-gray-400 mt-1">Developing and maintaining automation testing framework using SQL, .NET, and C# for the Order Entry System, with a focus on equity, fixed income, and conditional orders. Achieving an 80% improvement in time to market through automation efforts. Creating tools to support various departments within the Order Entry Management Team, enhancing efficiency and streamlining workflows.</p>
+        <p class="text-xs text-gray-500 mt-2">June 2024 - Present</p>
+      </div>
+    </div>
+  
+    <div class="flex items-center space-x-5 bg-gray-800 p-6 rounded-lg shadow-md transform transition duration-300 hover:shadow-xl hover:scale-105">
+      <!-- Image Container -->
+      <div class="flex-shrink-0 flex items-center justify-center bg-gray-700 rounded-full overflow-hidden h-24 w-24">
+        <img src="images/schwabLogo.svg" alt="Charles Schwab Logo" class="h-full w-full object-contain">
+      </div>
+      
+      <!-- Text Content -->
+      <div class="flex-grow">
+        <h3 class="text-xl font-semibold text-white">Charles Schwab</h3>
+        <p class="text-sm text-teal-400">Software Engineer Intern</p>
+        <p class="text-xs text-gray-400 mt-1">Interned with the Trading Technologies team at Charles Schwab in Austin, Texas, where I developed automated testing solutions for the Mutual Fund trade pipeline using C#, .NET Framework, and SQL, improving testing efficiency and accuracy while decreasing time to market by 60%. Achieved 1st place in the Business Summit Challenge by collaborating with my team to design a product addressing a key financial problem statement.</p>
+        <p class="text-xs text-gray-500 mt-2">June 2023 - August 2023</p>
+      </div>
+    </div>
+    
+    
+    
+  
+    <div class="flex items-center space-x-5 bg-gray-800 p-6 rounded-lg shadow-md transform transition duration-300 hover:shadow-xl hover:scale-105">
+      <div class="flex-shrink-0 flex items-center justify-center bg-gray-700 rounded-full overflow-hidden h-24 w-24">
+        <img src="images/peacock.png.jpeg" alt="Peacock Logo" class="h-full w-full object-contain">
+      </div>
+      <div>
+        <h3 class="text-xl font-semibold text-white">Peacock</h3>
+        <p class="text-sm text-teal-400">Software Engineer Intern</p>
+        <p class="text-xs text-gray-400 mt-1">Contributed to the DTC Software Development Team, where I developed software solutions focused on AWS Data Transfer and streamlined automation of previously manual processes. Actively participated in an Agile development environment, including daily stand-up meetings, to ensure efficient collaboration and project progress.</p>
+        <p class="text-xs text-gray-500 mt-2">September 2022 - December 2022</p>
+      </div>
+    </div>
+  
+    <div class="flex items-center space-x-5 bg-gray-800 p-6 rounded-lg shadow-md transform transition duration-300 hover:shadow-xl hover:scale-105">
+      <div class="flex-shrink-0 flex items-center justify-center bg-gray-700 rounded-full overflow-hidden h-24 w-24">
+        <img src="images/NBCUniversal_opt.jpg" alt="NBCU Logo" class="h-full w-full object-contain">
+      </div>
+      <div>
+        <h3 class="text-xl font-semibold text-white">NBCUniversal</h3>
+        <p class="text-sm text-teal-400">Software Engineer Intern</p>
+        <p class="text-xs text-gray-400 mt-1">Worked in the Operations and Technology department, where I gained expertise in GPG encryption and developed software to automatically detect and export expiring GPG keys. Designed and implemented forms used by NBCUniversal and external vendors for secure data transfer. Collaborated with a team of interns to redesign the Media Technology website, enhancing its user experience and functionality.</p>
+        <p class="text-xs text-gray-500 mt-2">June 2022 - August 2022</p>
+      </div>
+    </div>
+
+    <!-- Additional Work Experience cards here -->
+  </div>
+
+  <!-- Projects Section -->
+  <h2 class="text-6xl font-bold text-center text-gray-100 my-16">Projects</h2>
+  
+  <div class="grid grid-cols-1 mt-8 md:grid-cols-2 gap-8  px-4">
+    
+    <!-- Project Card 1 -->
+    <div class="bg-gray-800 p-6 rounded-lg shadow-lg transform transition duration-300 hover:scale-105">
+      <!-- Image Container -->
+      <div class="overflow-hidden rounded-lg mb-4">
+        <img src="images/aggiePassesHome.png" alt="Project Image" class="w-full h-48 object-cover transition-transform duration-300 hover:scale-105">
+      </div>
+      
+      <!-- Badge for User Count -->
+      <div class="absolute top-3 right-0 bg-green-500 text-white font-semibold px-4 py-1 text-xs transform rotate-46 translate-x-1 translate-y-1">
+        13K Users
+      </div>
+      
+      <h3 class="text-2xl font-bold mb-2">AggiePasses</h3>
+      <p class="text-lg">A full-stack application that serves as a marketplace, enabling students to create, manage, and delete listings for selling their Texas A&M Football game sports passes. The frontend is developed with React and JavaScript, while the backend is built using AWS Lambda functions for serverless computing and DynamoDB as the database solution.</p>
+      
+      <!-- Tags -->
+      <div class="flex flex-wrap gap-2 mt-4">
+        <div class="flex items-center">
+          <span class="w-2.5 h-2.5 rounded-full bg-blue-500 mr-2"></span>
+          <span class="text-sm text-gray-300">JavaScript</span>
+        </div>
+        <div class="flex items-center">
+          <span class="w-2.5 h-2.5 rounded-full mr-2" style="background-color: #00d8ff;"></span>
+          <span class="text-sm text-gray-300">React</span>
+        </div>
+        <div class="flex items-center">
+          <span class="w-2.5 h-2.5 rounded-full bg-purple-500 mr-2"></span>
+          <span class="text-sm text-gray-300">DynamoDB</span>
+        </div>
+        <div class="flex items-center">
+          <span class="w-2.5 h-2.5 rounded-full bg-yellow-500 mr-2"></span>
+          <span class="text-sm text-gray-300">AWS Lambda</span>
+        </div>
+      </div>
+  
+      <!-- Buttons -->
+      <div class="flex gap-4 mt-6">
+        <a href="https://www.aggiepasses.com" target="_blank" class="flex items-center justify-center bg-blue-500 text-white py-2 px-4 rounded-lg font-semibold shadow-md transition-transform transform hover:scale-105 hover:bg-blue-600">
+          <i class="fas fa-globe mr-2"></i> Live Site
+        </a>
+        <a href="https://github.com/andrewlin27/Sports-Pass" target="_blank" class="flex items-center justify-center bg-gray-700 text-white py-2 px-4 rounded-lg font-semibold shadow-md transition-transform transform hover:scale-105 hover:bg-gray-800">
+          <i class="fab fa-github mr-2"></i> GitHub
+        </a>
+      </div>
+    </div>
+
+
+    <div class="bg-gray-800 p-6 rounded-lg shadow-lg transform transition duration-300 hover:scale-105">
+
+      <div class="overflow-hidden rounded-lg mb-4">
+        <img src="images/chilifestBuilds.png" alt="Project Image" class="w-full h-48 object-cover transition-transform duration-300 hover:scale-105">
+      </div>
+
+      <div class="absolute top-3 right-0 bg-green-500 text-white font-semibold px-4 py-1 text-xs transform rotate-46 translate-x-1 translate-y-1">
+        11K Users
+      </div>
+      <h3 class="text-2xl font-bold mb-2">Chillifest Builds</h3>
+      <p class="text-lg">A full-stack application that provides details on ticket prices and packages for the Chillifest Music Festival, with a backend that supports a ticket resale platform. The frontend was developed with React and JavaScript, while the backend utilizes Node.js and Express. PostgreSQL serves as the database, hosted on AWS EC2 for scalability and reliability.</p>
+      
+      <!-- Tags -->
+      <div class="flex flex-wrap gap-2 mt-4">
+        <div class="flex items-center">
+          <span class="w-2.5 h-2.5 rounded-full bg-blue-500 mr-2"></span>
+          <span class="text-sm text-gray-300">JavaScript</span>
+        </div>
+        <div class="flex items-center">
+          <span class="w-2.5 h-2.5 rounded-full mr-2" style="background-color: #00d8ff;"></span>
+          <span class="text-sm text-gray-300">React</span>
+        </div>
+        <div class="flex items-center">
+          <span class="w-2.5 h-2.5 rounded-full bg-green-500 mr-2"></span>
+          <span class="text-sm text-gray-300">NodeJS</span>
+        </div>
+        <div class="flex items-center">
+          <span class="w-2.5 h-2.5 rounded-full bg-yellow-300 mr-2"></span>
+          <span class="text-sm text-gray-300">Express</span>
+        </div>
+        <div class="flex items-center">
+          <span class="w-2.5 h-2.5 rounded-full bg-red-500 mr-2"></span>
+          <span class="text-sm text-gray-300">PostgreSQL</span>
+        </div>
+        <div class="flex items-center">
+          <span class="w-2.5 h-2.5 rounded-full bg-pink-500 mr-2"></span>
+          <span class="text-sm text-gray-300">AWS EC2</span>
+        </div>
+      </div>
+
+      <!-- Buttons -->
+      <div class="flex gap-4 mt-6">
+        <a href="https://chilifestbuilds.com/#/" target="_blank" class="flex items-center justify-center bg-blue-500 text-white py-2 px-4 rounded-lg font-semibold shadow-md transition-transform transform hover:scale-105 hover:bg-blue-600">
+          <i class="fas fa-globe mr-2"></i> Live Site
+        </a>
+        <a href="https://github.com/andrewlin27/chilifest-builds" target="_blank" class="flex items-center justify-center bg-gray-700 text-white py-2 px-4 rounded-lg font-semibold shadow-md transition-transform transform hover:scale-105 hover:bg-gray-800">
+          <i class="fab fa-github mr-2"></i> GitHub
+        </a>
+      </div>
+      
+    </div>
+    
+    <div class="bg-gray-800 p-6 rounded-lg shadow-lg transform transition duration-300 hover:scale-105">
+
+      <div class="overflow-hidden rounded-lg mb-4">
+        <img src="images/FinancialCompare.png" alt="Project Image" class="w-full h-48 object-cover transition-transform duration-300 hover:scale-105">
+      </div>
+
+      <div class="absolute top-3 right-0 bg-yellow-500 text-white font-semibold px-4 py-1 text-xs transform rotate-46 translate-x-1 translate-y-1">
+        Hackathon Winner
+      </div>
+      <h3 class="text-2xl font-bold mb-2">Financial Dashboard (TAMUHack Winner)</h3>
+      <p class="text-lg">Application that allows users to compare live stock prices, view expert reccomendations, and receive the latest news about any security. Firebase backend allowed users to log in and track ongoing budgeting habits over time. (Backend now offline due to resource constraints)</p>
+      
+      <!-- Tags -->
+      <div class="flex flex-wrap gap-2 mt-4">
+        <div class="flex items-center">
+          <span class="w-2.5 h-2.5 rounded-full bg-blue-500 mr-2"></span>
+          <span class="text-sm text-gray-300">JavaScript</span>
+        </div>
+        <div class="flex items-center">
+          <span class="w-2.5 h-2.5 rounded-full mr-2" style="background-color: #00d8ff;"></span>
+          <span class="text-sm text-gray-300">React</span>
+        </div>
+        <div class="flex items-center">
+          <span class="w-2.5 h-2.5 rounded-full mr-2" style="background-color: #e96900;"></span>
+          <span class="text-sm text-gray-300">Firebase</span>
+        </div>
+      </div>
+
+      <!-- Buttons -->
+      <div class="flex gap-4 mt-6">
+        <a href="https://siddharthvenkatraman21.github.io/FinancialBoard/" target="_blank" class="flex items-center justify-center bg-blue-500 text-white py-2 px-4 rounded-lg font-semibold shadow-md transition-transform transform hover:scale-105 hover:bg-blue-600">
+          <i class="fas fa-globe mr-2"></i> Live Site
+        </a>
+        <a href="https://github.com/SiddharthVenkatraman21/FinancialBoard" target="_blank" class="flex items-center justify-center bg-gray-700 text-white py-2 px-4 rounded-lg font-semibold shadow-md transition-transform transform hover:scale-105 hover:bg-gray-800">
+          <i class="fab fa-github mr-2"></i> GitHub
+        </a>
+      </div>
+      
+    </div>
+
+    <div class="bg-gray-800 p-6 rounded-lg shadow-lg transform transition duration-300 hover:scale-105">
+
+      <div class="overflow-hidden rounded-lg mb-4">
+        <img src="images/flightView.png" alt="Project Image" class="w-full h-48 object-cover transition-transform duration-300 hover:scale-105">
+      </div>
+
+      <h3 class="text-2xl font-bold mb-2">Live Air Traffic Viewer</h3>
+      <p class="text-lg">Incorporated the AirLabs API to retrieve real-time flight data and implemented Cesium Ion graphics to develop a 3D visualization that enhanced the user experience. The feature included interactive elements, allowing users to select any displayed flight to view its destination, current altitude, and flight number.</p>
+      
+      <!-- Tags -->
+      <div class="flex flex-wrap gap-2 mt-4">
+        <div class="flex items-center">
+          <span class="w-2.5 h-2.5 rounded-full bg-blue-500 mr-2"></span>
+          <span class="text-sm text-gray-300">JavaScript</span>
+        </div>
+        <div class="flex items-center">
+          <span class="w-2.5 h-2.5 rounded-full mr-2" style="background-color: #00d8ff;"></span>
+          <span class="text-sm text-gray-300">React</span>
+        </div>
+        <div class="flex items-center">
+          <span class="w-2.5 h-2.5 rounded-full mr-2" style="background-color: #00e91f;"></span>
+          <span class="text-sm text-gray-300"> Computer Graphics</span>
+        </div>
+      </div>
+
+      <!-- Buttons -->
+      <div class="flex gap-4 mt-6">
+        <a href="https://siddharthvenkatraman21.github.io/FlightTracker/" target="_blank" class="flex items-center justify-center bg-blue-500 text-white py-2 px-4 rounded-lg font-semibold shadow-md transition-transform transform hover:scale-105 hover:bg-blue-600">
+          <i class="fas fa-globe mr-2"></i> Live Site
+        </a>
+        <a href="https://github.com/SiddharthVenkatraman21/FlightTracker" target="_blank" class="flex items-center justify-center bg-gray-700 text-white py-2 px-4 rounded-lg font-semibold shadow-md transition-transform transform hover:scale-105 hover:bg-gray-800">
+          <i class="fab fa-github mr-2"></i> GitHub
+        </a>
+      </div>
+      
+    </div>
+
+    <!-- Additional Project cards here -->
+  </div>
+
+  <section class="py-10 bg-gray-800 mt-16">
+    <h2 class="text-6xl font-bold text-gray-100 text-center mb-8">Personal Experiences</h2>
+    
+    <!-- Collage Grid -->
+    <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-4 px-4">
+      <!-- Image Card Example -->
+      <div class="relative group overflow-hidden rounded-lg shadow-lg">
+        <img src="images/GradPicSuitGate.jpg" alt="Experience 1" class="w-full h-full object-cover transition-transform duration-300 group-hover:scale-105">
+        <div class="absolute inset-0 bg-black bg-opacity-60 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center p-4">
+          <div class="text-center text-white">
+            <h3 class="text-xl font-semibold">Craig and Galen Brown Foundation Scholar</h3>
+            <p class="text-sm mt-2 hidden lg:block">Selected as a Craig Brown Scholar at Texas A&M, receiving a full-tuition scholarship awarded based on academic achievements and merit.</p>
+          </div>
+        </div>
+      </div>
+      
+      <div class="relative group overflow-hidden rounded-lg shadow-lg">
+        <img src="images/ZLHeadshotBrighter.jpg" alt="Experience 2" class="w-full h-full object-cover transition-transform duration-300 group-hover:scale-105">
+        <div class="absolute inset-0 bg-black bg-opacity-60 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center p-4">
+          <div class="text-center text-white">
+            <h3 class="text-xl font-semibold">National Merit Scholar</h3>
+            <p class="text-sm mt-2 hidden lg:block">Recognized as a National Merit Scholar, a scholarship awarded to top-performing students nationwide based on academic excellence and standardized test scores.</p>
+          </div>
+        </div>
+      </div>
+      
+      <!-- Repeat similar blocks for each experience image -->
+      
+      <div class="relative group overflow-hidden rounded-lg shadow-lg">
+        <img src="images/FlexHeadshot.jpg" alt="Experience 2" class="w-full h-full object-cover transition-transform duration-300 group-hover:scale-105">
+        <div class="absolute inset-0 bg-black bg-opacity-60 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center p-4">
+          <div class="text-center text-white">
+            <h3 class="text-xl font-semibold">Freshman Leadership Organization Counselor</h3>
+            <p class="text-sm mt-2 hidden lg:block">Served as a Zone Leader in a Freshman Leadership Organization, leading a group of 14 students and planning events for the 72-person organization.</p>
+          </div>
+        </div>
+      </div>
+      
+      <div class="relative group overflow-hidden rounded-lg shadow-lg">
+        <img src="images/NBCPost.png" alt="Experience 2" class="w-full h-full object-cover transition-transform duration-300 group-hover:scale-105">
+        <div class="absolute inset-0 bg-black bg-opacity-60 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center p-4">
+          <div class="text-center text-white">
+            <h3 class="text-xl font-semibold">NBC Intern Spotlight</h3>
+            <p class="text-sm mt-2 hidden lg:block">Fun post highlighting my experience in New York City during my internship with NBCUniversal.</p>
+          </div>
+        </div>
+      </div>
+      
+      <div class="relative group overflow-hidden rounded-lg shadow-lg">
+        <img src="images/TamuHack24Team.jpg" alt="Experience 2" class="w-full h-full object-cover transition-transform duration-300 group-hover:scale-105">
+        <div class="absolute inset-0 bg-black bg-opacity-60 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center p-4">
+          <div class="text-center text-white">
+            <h3 class="text-xl font-semibold">TamuHack '24 Team Photo</h3>
+            <p class="text-sm mt-2 hidden lg:block">Photo of my team after we won at Texas A&M's Hackathon.</p>
+          </div>
+        </div>
+      </div>
+      
+      <div class="relative group overflow-hidden rounded-lg shadow-lg">
+        <img src="images/AbbottFam.JPEG" alt="Experience 2" class="w-full h-full object-cover transition-transform duration-300 group-hover:scale-105">
+        <div class="absolute inset-0 bg-black bg-opacity-60 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center p-4">
+          <div class="text-center text-white">
+            <h3 class="text-xl font-semibold">MSC Abbott Leadership Conference</h3>
+            <p class="text-sm mt-2 hidden lg:block">Selected to serve as a delegate at the 2023 MSC Abbott Leadership Conference in Houston.</p>
+          </div>
+        </div>
+      </div>
+      
+      <div class="relative group overflow-hidden rounded-lg shadow-lg">
+        <img src="images/CampDG.JPEG" alt="Experience 2" class="w-full h-full object-cover transition-transform duration-300 group-hover:scale-105">
+        <div class="absolute inset-0 bg-black bg-opacity-60 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center p-4">
+          <div class="text-center text-white">
+            <h3 class="text-xl font-semibold">Fish Camp Counselor</h3>
+            <p class="text-sm mt-2 hidden lg:block">Served as a 2x counselor for Fish Camp, an orientation program designed to welcome and guide incoming freshmen throughout the year.</p>
+          </div>
+        </div>
+      </div>
+      
+      <div class="relative group overflow-hidden rounded-lg shadow-lg">
+        <img src="images/AceHeadshotTie.JPG" alt="Experience 2" class="w-full h-full object-cover transition-transform duration-300 group-hover:scale-105">
+        <div class="absolute inset-0 bg-black bg-opacity-60 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center p-4">
+          <div class="text-center text-white">
+            <h3 class="text-xl font-semibold">ACE Service Chair</h3>
+            <p class="text-sm mt-2 hidden lg:block">Served as the Service Chair for the Aggie Club of Engineers. I worked with other organizations and local volunteer sites to plan events.</p>
+          </div>
+        </div>
+      </div>
+      
+      
+  
+      <!-- Add more cards as needed -->
+      
+    </div>
+
+    
+  </section>
+
+  <!-- Footer Section -->
+<!-- Footer Section -->
+<!-- Footer Section -->
+<!-- Footer Section -->
+<footer class="bg-gray-900 py-4 mt-10">
+  <div class="container mx-auto px-4 text-center">
+    <h2 class="text-3xl font-semibold text-white mb-6">Let's Connect</h2>
+    <p class="text-lg text-gray-300 mb-6">Feel free to reach out via email or LinkedIn</p>
+    
+    <!-- Cylinder Container for Icons -->
+    <div class="inline-flex items-center gap-6 bg-gray-700 px-6 py-4 rounded-full">
+      <!-- Email Icon and Link -->
+      <a href="mailto:sid.venkatraman17@gmail.com" target="_blank" rel="noopener noreferrer" 
+         class="transition-all duration-300 transform hover:scale-110 hover:text-blue-500">
+        <i class="fas fa-envelope text-3xl text-gray-300 hover:text-blue-500"></i>
+        <span class="sr-only">Email</span>
+      </a>
+      
+      <!-- LinkedIn Icon and Link -->
+      <a href="https://www.linkedin.com/in/sid-venkatraman/" target="_blank" rel="noopener noreferrer" 
+         class="transition-all duration-300 transform hover:scale-110 hover:text-blue-500">
+        <i class="fab fa-linkedin text-3xl text-gray-300 hover:text-blue-500"></i>
+        <span class="sr-only">LinkedIn</span>
+      </a>
+    </div>
+  </div>
+</footer>
+
+
+
+
+  
+  
+  
+  
+  
+  
+  
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+
+  <script src="script.js"></script>
+</body>
+</html>
