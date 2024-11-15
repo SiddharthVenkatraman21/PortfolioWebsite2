@@ -100,21 +100,27 @@ function animate() {
 generateLines();
 animate();
 
-document.addEventListener("DOMContentLoaded", () => {
-  const isMobile = window.innerWidth < 768;
-  if (isMobile) {
-    // Select all experience cards
-    const cards = document.querySelectorAll(".experience-card");
+// Get the image and mobile overlay elements
+const image = document.getElementById('imageClick');
+const overlayMobile = document.getElementById('overlayMobile');
 
-    cards.forEach(card => {
-      // Find the overlay content within each card
-      const overlayContent = card.querySelector(".overlay-content");
+// Listen for a click on the image (for mobile)
+image.addEventListener('click', function(event) {
+    // Prevent event from bubbling up to the document (to prevent closing immediately after opening)
+    event.stopPropagation();
 
-      card.addEventListener("click", () => {
-        // Toggle the Tailwind classes for opacity
-        overlayContent.classList.toggle("opacity-0");
-        overlayContent.classList.toggle("opacity-100");
-      });
-    });
-  }
+    // Toggle the visibility of the mobile overlay
+    overlayMobile.classList.toggle('opacity-0');
+    overlayMobile.classList.toggle('opacity-100');
 });
+
+// Listen for click events on the document to close the overlay when clicked outside
+document.addEventListener('click', function(event) {
+    if (!image.contains(event.target)) {
+        // Hide the overlay if clicked outside the image
+        overlayMobile.classList.add('opacity-0');
+        overlayMobile.classList.remove('opacity-100');
+    }
+});
+
+

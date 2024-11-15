@@ -479,38 +479,43 @@
         </div>
     </div>
     
-    <div class="relative group overflow-hidden rounded-lg shadow-lg">
-      <img src="images/CampDG.JPEG" alt="Experience 7" class="w-full h-full object-cover transition-transform duration-300 group-hover:scale-105">
-      <div class="overlay-content absolute inset-0 bg-black bg-opacity-60 opacity-0 hover:opacity-100 transition-opacity duration-300 flex items-center justify-center p-4">
+    <div class="relative overflow-hidden rounded-lg shadow-lg">
+      <!-- Image with tabindex for focus -->
+      <img src="images/CampDG.JPEG" alt="Experience 7" class="w-full h-full object-cover transition-transform duration-300 group-hover:scale-105 focus:outline-none cursor-pointer" id="imageClick">
+  
+      <!-- Overlay Content (Mobile View) -->
+      <div class="overlay-content absolute inset-0 bg-black bg-opacity-60 opacity-0 lg:hidden transition-opacity duration-300 flex items-center justify-center p-4" id="overlay">
           <div class="text-center text-white">
               <h3 class="text-xl font-semibold">Fish Camp Counselor</h3>
-              <p class="text-sm mt-2 hidden lg:block">Served as a 2x counselor for Fish Camp, an orientation program designed to welcome and guide incoming freshmen throughout the year.</p>
-          </div>
-      </div>
-      <!-- Mobile Toggle Content -->
-      <div class="overlay-content absolute inset-0 bg-black bg-opacity-60 opacity-0 group-hover:opacity-100 lg:hidden transition-opacity duration-300 flex items-center justify-center p-4">
-          <div class="text-center text-white">
-              <h3 class="text-xl font-semibold">Fish Camp Counselor</h3>
+              <p class="text-sm mt-2">Served as a 2x counselor for Fish Camp, an orientation program designed to welcome and guide incoming freshmen throughout the year.</p>
           </div>
       </div>
   </div>
+  
+  
 
   
   <div class="relative group overflow-hidden rounded-lg shadow-lg">
-    <img src="images/AceHeadshotTie.JPG" alt="Experience 7" class="w-full h-full object-cover transition-transform duration-300 group-hover:scale-105">
-    <div class="overlay-content absolute inset-0 bg-black bg-opacity-60 opacity-0 hover:opacity-100 transition-opacity duration-300 flex items-center justify-center p-4">
+    <!-- Image with hover functionality for desktop -->
+    <img src="images/AceHeadshotTie.JPG" alt="Experience 7" class="w-full h-full object-cover transition-transform duration-300 group-hover:scale-105 cursor-pointer" id="imageClick">
+    
+    <!-- Desktop Overlay Content (visible on hover) -->
+    <div class="overlay-content absolute inset-0 bg-black bg-opacity-60 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center p-4">
         <div class="text-center text-white">
             <h3 class="text-xl font-semibold">ACE Service Chair</h3>
             <p class="text-sm mt-2 hidden lg:block">Served as the Service Chair for the Aggie Club of Engineers. I worked with other organizations and local volunteer sites to plan events.</p>
         </div>
     </div>
-    <!-- Mobile Toggle Content -->
-    <div class="overlay-content absolute inset-0 bg-black bg-opacity-60 opacity-0 group-hover:opacity-100 lg:hidden transition-opacity duration-300 flex items-center justify-center p-4">
+
+    <!-- Mobile Toggle Content (hidden by default) -->
+    <div class="overlay-content absolute inset-0 bg-black bg-opacity-60 opacity-0 transition-opacity duration-300 flex items-center justify-center p-4 lg:hidden" id="overlayMobile">
         <div class="text-center text-white">
             <h3 class="text-xl font-semibold">ACE Service Chair</h3>
+            <p class="text-sm mt-2">Served as the Service Chair for the Aggie Club of Engineers. I worked with other organizations and local volunteer sites to plan events.</p>
         </div>
     </div>
 </div>
+
   
 
   
