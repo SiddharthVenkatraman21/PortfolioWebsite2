@@ -191,7 +191,51 @@
   <h2 class="text-6xl font-bold text-center text-gray-100 my-16">Projects</h2>
   
   <div class="grid grid-cols-1 mt-8 md:grid-cols-2 gap-8  px-4">
-    
+    <div class="bg-gray-800 p-6 rounded-lg shadow-lg transform transition duration-300 hover:scale-105">
+
+      <div class="overflow-hidden rounded-lg mb-4">
+        <img src="images/nbai.png" alt="Project Image" class="w-full h-48 object-cover transition-transform duration-300 hover:scale-105">
+      </div>
+
+      <h3 class="text-2xl font-bold mb-2">The NBAI Show</h3>
+      <p class="text-lg">This web application automatically generates and uploads daily NBA podcasts using OpenAI GPT to create scripts based on the previous night’s game scores and team performance. It leverages Google Cloud Text-to-Speech for narration, and stores podcast MP3 files in AWS DynamoDB and S3. Hosted on AWS EC2 with automated CRON jobs, this full-stack app built with React ensures daily, hands-free podcast production.</p>
+      
+      <!-- Tags -->
+      <div class="flex flex-wrap gap-2 mt-4">
+        <div class="flex items-center">
+          <span class="w-2.5 h-2.5 rounded-full mr-2" style="background-color: #00e91f;"></span>
+          <span class="text-sm text-gray-300"> OpenAI GPT</span>
+        </div>
+        <div class="flex items-center">
+          <span class="w-2.5 h-2.5 rounded-full bg-yellow-500 mr-2"></span>
+          <span class="text-sm text-gray-300">AWS (DyanmoDB, Lambda, S3, EC2)</span>
+        </div>
+        <div class="flex items-center">
+          <span class="w-2.5 h-2.5 rounded-full bg-blue-500 mr-2"></span>
+          <span class="text-sm text-gray-300">Google Cloud</span>
+        </div>
+        <div class="flex items-center">
+          <span class="w-2.5 h-2.5 rounded-full mr-2" style="background-color: #00d8ff;"></span>
+          <span class="text-sm text-gray-300">ReactJS</span>
+        </div>
+        <div class="flex items-center">
+          <span class="w-2.5 h-2.5 rounded-full bg-green-500 mr-2"></span>
+          <span class="text-sm text-gray-300">Python</span>
+        </div>
+        
+      </div>
+
+      <!-- Buttons -->
+      <div class="flex gap-4 mt-6">
+        <a href="https://nbai-show.vercel.app" target="_blank" class="flex items-center justify-center bg-blue-500 text-white py-2 px-4 rounded-lg font-semibold shadow-md transition-transform transform hover:scale-105 hover:bg-blue-600">
+          <i class="fas fa-globe mr-2"></i> Live Site
+        </a>
+        <a href="https://github.com/SiddharthVenkatraman21/NBAIShow" target="_blank" class="flex items-center justify-center bg-gray-700 text-white py-2 px-4 rounded-lg font-semibold shadow-md transition-transform transform hover:scale-105 hover:bg-gray-800">
+          <i class="fab fa-github mr-2"></i> GitHub
+        </a>
+      </div>
+      
+    </div>
     <!-- Project Card 1 -->
     <div class="bg-gray-800 p-6 rounded-lg shadow-lg transform transition duration-300 hover:scale-105">
       <!-- Image Container -->
@@ -201,10 +245,10 @@
       
       <!-- Badge for User Count -->
       <div class="absolute top-3 right-0 bg-green-500 text-white font-semibold px-4 py-1 text-xs transform rotate-46 translate-x-1 translate-y-1">
-        13K Users
+        16K Users
       </div>
       
-      <h3 class="text-2xl font-bold mb-2">AggiePasses</h3>
+      <h3 class="text-2xl font-bold mb-2">AggiePasses (16,000 Users)</h3>
       <p class="text-lg">A full-stack application that serves as a marketplace, enabling students to create, manage, and delete listings for selling their Texas A&M Football game sports passes. The frontend is developed with React and JavaScript, while the backend is built using AWS Lambda functions for serverless computing and DynamoDB as the database solution.</p>
       
       <!-- Tags -->
